@@ -1,0 +1,15 @@
+<%- include("header") %>
+
+<div class="wrapper">
+  <% if(locals.allPosts.length !== 0) {%>
+  <h1 class="class">All posts:</h1>
+  <div class="all-posts">
+    <% allPosts.forEach((post)=>{%>
+    <p class="single-post"><%= post %></p>
+    <% }) %> <% } else {%>
+    <h1 class="class">No posts yet</h1>
+    <% } %>
+  </div>
+</div>
+
+<%- include("footer") %>
